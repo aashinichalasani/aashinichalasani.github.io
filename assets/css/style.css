@@ -1684,12 +1684,20 @@ textarea.form-input::-webkit-resizer { display: none; }
    * MAIN 
    */
 
-  main { margin-bottom: 60px; }
+  main {
+    max-width: 1400px;
+    margin-inline: auto;
+    margin-bottom: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 25px;
+  }
 
   .main-content {
-    position: relative;
-    width: max-content;
-    margin: auto;
+    min-width: 75%;
+    width: 75%;
+    margin: 0;
   }
 
 
