@@ -1720,6 +1720,22 @@ textarea.form-input::-webkit-resizer { display: none; }
   main.page-contact .main-content {
     width: 100%;
     min-width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+  }
+
+  main.page-resume article,
+  main.page-contact article {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    box-sizing: border-box;
+  }
+
+  main.page-resume .timeline-list,
+  main.page-contact .timeline-list {
+    margin-left: 0;
   }
 
 
@@ -1859,6 +1875,22 @@ textarea.form-input::-webkit-resizer { display: none; }
   main.page-contact .main-content {
     width: 100%;
     min-width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+  }
+
+  main.page-resume article,
+  main.page-contact article {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    box-sizing: border-box;
+  }
+
+  main.page-resume .timeline-list,
+  main.page-contact .timeline-list {
+    margin-left: 0;
   }
 
 
