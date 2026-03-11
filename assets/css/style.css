@@ -1727,10 +1727,11 @@ textarea.form-input::-webkit-resizer { display: none; }
 
   main.page-resume article,
   main.page-contact article {
-    width: 100%;
-    max-width: 1000px;
+    width: 90%;
+    max-width: none;
     margin: 0 auto;
     box-sizing: border-box;
+    padding: 30px;
   }
 
   main.page-resume .timeline-list,
@@ -1889,10 +1890,11 @@ textarea.form-input::-webkit-resizer { display: none; }
 
   main.page-resume article,
   main.page-contact article {
-    width: 100%;
-    max-width: 1000px;
+    width: 90%;
+    max-width: none;
     margin: 0 auto;
     box-sizing: border-box;
+    padding: 30px;
   }
 
   main.page-resume .timeline-list,
