@@ -63,6 +63,10 @@ for (let i = 0; i < formInputs.length; i++) {
 // page navigation variables
 const navigationLinks = document.querySelectorAll("[data-nav-link]");
 const pages = document.querySelectorAll("[data-page]");
+const main = document.querySelector("main");
+
+// Initialize with about page on load
+main.classList.add("page-about");
 
 // add event to all nav link
 for (let i = 0; i < navigationLinks.length; i++) {
@@ -85,12 +89,9 @@ for (let i = 0; i < navigationLinks.length; i++) {
         navigationLinks[j].classList.add("active");
         window.scrollTo(0, 0);
         
-        // Hide sidebar on resume and contact pages, show on about page
-        if (clickedPageName === "resume" || clickedPageName === "contact") {
-          sidebar.style.display = "none";
-        } else {
-          sidebar.style.display = "block";
-        }
+        // Add or remove page class on main for CSS control
+        main.classList.remove("page-about", "page-resume", "page-contact");
+        main.classList.add("page-" + clickedPageName);
         
         break;
       }

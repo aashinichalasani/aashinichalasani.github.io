@@ -1711,7 +1711,13 @@ textarea.form-input::-webkit-resizer { display: none; }
     margin: 0;
   }
 
-  main:has(.sidebar[style*="display: none"]) .main-content {
+  main.page-resume .sidebar,
+  main.page-contact .sidebar {
+    display: none !important;
+  }
+
+  main.page-resume .main-content,
+  main.page-contact .main-content {
     width: 100%;
     min-width: 100%;
   }
@@ -1844,7 +1850,13 @@ textarea.form-input::-webkit-resizer { display: none; }
     margin: 0;
   }
 
-  main:has(.sidebar[style*="display: none"]) .main-content {
+  main.page-resume .sidebar,
+  main.page-contact .sidebar {
+    display: none !important;
+  }
+
+  main.page-resume .main-content,
+  main.page-contact .main-content {
     width: 100%;
     min-width: 100%;
   }
