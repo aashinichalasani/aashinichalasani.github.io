@@ -1716,17 +1716,20 @@ textarea.form-input::-webkit-resizer { display: none; }
   }
 
   main.page-experience .main-content {
-    width: 100%;
+    width: 100% !important;
     min-width: 100%;
-    margin: 0 auto;
+    margin: 0 !important;
     display: flex;
     justify-content: center;
+    align-items: flex-start;
+    padding: 0 20px;
+    box-sizing: border-box;
   }
 
   main.page-experience article {
-    width: 90%;
-    max-width: none;
-    margin: 0 auto;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0;
     box-sizing: border-box;
     padding: 30px;
   }
@@ -1873,17 +1876,20 @@ textarea.form-input::-webkit-resizer { display: none; }
   }
 
   main.page-experience .main-content {
-    width: 100%;
+    width: 100% !important;
     min-width: 100%;
-    margin: 0 auto;
+    margin: 0 !important;
     display: flex;
     justify-content: center;
+    align-items: flex-start;
+    padding: 0 20px;
+    box-sizing: border-box;
   }
 
   main.page-experience article {
-    width: 90%;
-    max-width: none;
-    margin: 0 auto;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0;
     box-sizing: border-box;
     padding: 30px;
   }
