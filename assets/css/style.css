@@ -1711,6 +1711,11 @@ textarea.form-input::-webkit-resizer { display: none; }
     margin: 0;
   }
 
+  main:has(.sidebar[style*="display: none"]) .main-content {
+    width: 100%;
+    min-width: 100%;
+  }
+
 
 
   /**
@@ -1837,6 +1842,11 @@ textarea.form-input::-webkit-resizer { display: none; }
     min-width: 75%;
     width: 75%;
     margin: 0;
+  }
+
+  main:has(.sidebar[style*="display: none"]) .main-content {
+    width: 100%;
+    min-width: 100%;
   }
 
 

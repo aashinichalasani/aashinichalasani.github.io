@@ -84,6 +84,14 @@ for (let i = 0; i < navigationLinks.length; i++) {
         pages[j].classList.add("active");
         navigationLinks[j].classList.add("active");
         window.scrollTo(0, 0);
+        
+        // Hide sidebar on resume and contact pages, show on about page
+        if (clickedPageName === "resume" || clickedPageName === "contact") {
+          sidebar.style.display = "none";
+        } else {
+          sidebar.style.display = "block";
+        }
+        
         break;
       }
     }
