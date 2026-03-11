@@ -173,8 +173,6 @@ article {
   padding: 15px;
   box-shadow: var(--shadow-1);
   z-index: 1;
-  width: 100%;
-  max-width: 100%;
 }
 
 .separator {
@@ -1557,7 +1555,7 @@ textarea.form-input::-webkit-resizer { display: none; }
    * REUSED STYLE
    */
 
-  .sidebar, article { width: 100%; max-width: 700px; margin: 0 auto; }
+  .sidebar, article { width: 700px; }
 
   .has-scrollbar::-webkit-scrollbar-button { width: 100px; }
 
@@ -1794,7 +1792,7 @@ textarea.form-input::-webkit-resizer { display: none; }
    * REUSED STYLE
    */
 
-  .sidebar, article { width: 100%; }
+  .sidebar, article { width: auto; }
 
   article { min-height: 100%; }
 
@@ -1814,8 +1812,8 @@ textarea.form-input::-webkit-resizer { display: none; }
   }
 
   .main-content {
-    min-width: 100%;
-    width: 100%;
+    min-width: 75%;
+    width: 75%;
     margin: 0;
   }
 
