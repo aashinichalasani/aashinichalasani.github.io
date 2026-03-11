@@ -68,8 +68,8 @@ const pages = document.querySelectorAll("[data-page]");
 for (let i = 0; i < navigationLinks.length; i++) {
   navigationLinks[i].addEventListener("click", function () {
     
-    // Get the text of clicked button
-    const clickedPageName = this.innerHTML.toLowerCase();
+    // Get the text of clicked button and trim whitespace
+    const clickedPageName = this.innerHTML.toLowerCase().trim();
 
     // Hide all pages and remove active from all nav links
     for (let j = 0; j < pages.length; j++) {
@@ -79,15 +79,14 @@ for (let i = 0; i < navigationLinks.length; i++) {
 
     // Show the selected page and activate the clicked nav link
     for (let j = 0; j < pages.length; j++) {
-      if (clickedPageName === pages[j].dataset.page) {
+      const pageDataAttr = pages[j].dataset.page.toLowerCase().trim();
+      if (clickedPageName === pageDataAttr) {
         pages[j].classList.add("active");
+        navigationLinks[j].classList.add("active");
+        window.scrollTo(0, 0);
         break;
       }
     }
-
-    // Add active class to clicked button
-    this.classList.add("active");
-    window.scrollTo(0, 0);
 
   });
 }
