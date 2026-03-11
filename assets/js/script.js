@@ -67,17 +67,27 @@ const pages = document.querySelectorAll("[data-page]");
 // add event to all nav link
 for (let i = 0; i < navigationLinks.length; i++) {
   navigationLinks[i].addEventListener("click", function () {
+    
+    // Get the text of clicked button
+    const clickedPageName = this.innerHTML.toLowerCase();
 
+    // Hide all pages and remove active from all nav links
     for (let j = 0; j < pages.length; j++) {
-      if (this.innerHTML.toLowerCase() === pages[j].dataset.page) {
+      pages[j].classList.remove("active");
+      navigationLinks[j].classList.remove("active");
+    }
+
+    // Show the selected page and activate the clicked nav link
+    for (let j = 0; j < pages.length; j++) {
+      if (clickedPageName === pages[j].dataset.page) {
         pages[j].classList.add("active");
-        navigationLinks[j].classList.add("active");
-        window.scrollTo(0, 0);
-      } else {
-        pages[j].classList.remove("active");
-        navigationLinks[j].classList.remove("active");
+        break;
       }
     }
+
+    // Add active class to clicked button
+    this.classList.add("active");
+    window.scrollTo(0, 0);
 
   });
 }
