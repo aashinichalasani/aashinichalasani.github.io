@@ -1738,6 +1738,13 @@ textarea.form-input::-webkit-resizer { display: none; }
     margin-left: 0;
   }
 
+  main.page-resume .timeline-item:not(:last-child)::before,
+  main.page-contact .timeline-item:not(:last-child)::before,
+  main.page-resume .timeline-item::after,
+  main.page-contact .timeline-item::after {
+    display: none;
+  }
+
 
 
   /**
@@ -1891,6 +1898,13 @@ textarea.form-input::-webkit-resizer { display: none; }
   main.page-resume .timeline-list,
   main.page-contact .timeline-list {
     margin-left: 0;
+  }
+
+  main.page-resume .timeline-item:not(:last-child)::before,
+  main.page-contact .timeline-item:not(:last-child)::before,
+  main.page-resume .timeline-item::after,
+  main.page-contact .timeline-item::after {
+    display: none;
   }
 
 
