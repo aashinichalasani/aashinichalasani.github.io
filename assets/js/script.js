@@ -89,8 +89,8 @@ for (let i = 0; i < navigationLinks.length; i++) {
         navigationLinks[j].classList.add("active");
         window.scrollTo(0, 0);
         
-        // Add or remove page class on main for CSS control
-        main.classList.remove("page-about", "page-resume", "page-contact");
+        // Update page class on main for CSS control
+        main.classList.remove("page-about", "page-experience");
         main.classList.add("page-" + clickedPageName);
         
         break;

@@ -1711,13 +1711,11 @@ textarea.form-input::-webkit-resizer { display: none; }
     margin: 0;
   }
 
-  main.page-resume .sidebar,
-  main.page-contact .sidebar {
+  main.page-experience .sidebar {
     display: none !important;
   }
 
-  main.page-resume .main-content,
-  main.page-contact .main-content {
+  main.page-experience .main-content {
     width: 100%;
     min-width: 100%;
     margin: 0 auto;
@@ -1725,8 +1723,7 @@ textarea.form-input::-webkit-resizer { display: none; }
     justify-content: center;
   }
 
-  main.page-resume article,
-  main.page-contact article {
+  main.page-experience article {
     width: 90%;
     max-width: none;
     margin: 0 auto;
@@ -1734,15 +1731,12 @@ textarea.form-input::-webkit-resizer { display: none; }
     padding: 30px;
   }
 
-  main.page-resume .timeline-list,
-  main.page-contact .timeline-list {
+  main.page-experience .timeline-list {
     margin-left: 0;
   }
 
-  main.page-resume .timeline-item:not(:last-child)::before,
-  main.page-contact .timeline-item:not(:last-child)::before,
-  main.page-resume .timeline-item::after,
-  main.page-contact .timeline-item::after {
+  main.page-experience .timeline-item:not(:last-child)::before,
+  main.page-experience .timeline-item::after {
     display: none;
   }
 
@@ -1874,13 +1868,11 @@ textarea.form-input::-webkit-resizer { display: none; }
     margin: 0;
   }
 
-  main.page-resume .sidebar,
-  main.page-contact .sidebar {
+  main.page-experience .sidebar {
     display: none !important;
   }
 
-  main.page-resume .main-content,
-  main.page-contact .main-content {
+  main.page-experience .main-content {
     width: 100%;
     min-width: 100%;
     margin: 0 auto;
@@ -1888,8 +1880,7 @@ textarea.form-input::-webkit-resizer { display: none; }
     justify-content: center;
   }
 
-  main.page-resume article,
-  main.page-contact article {
+  main.page-experience article {
     width: 90%;
     max-width: none;
     margin: 0 auto;
@@ -1897,15 +1888,12 @@ textarea.form-input::-webkit-resizer { display: none; }
     padding: 30px;
   }
 
-  main.page-resume .timeline-list,
-  main.page-contact .timeline-list {
+  main.page-experience .timeline-list {
     margin-left: 0;
   }
 
-  main.page-resume .timeline-item:not(:last-child)::before,
-  main.page-contact .timeline-item:not(:last-child)::before,
-  main.page-resume .timeline-item::after,
-  main.page-contact .timeline-item::after {
+  main.page-experience .timeline-item:not(:last-child)::before,
+  main.page-experience .timeline-item::after {
     display: none;
   }
 
