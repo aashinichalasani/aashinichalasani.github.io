@@ -1814,8 +1814,8 @@ textarea.form-input::-webkit-resizer { display: none; }
   }
 
   .main-content {
-    min-width: 75%;
-    width: 75%;
+    min-width: 100%;
+    width: 100%;
     margin: 0;
   }
 
